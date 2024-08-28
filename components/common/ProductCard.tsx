@@ -1,3 +1,5 @@
+"use client";
+import useIsMobile from "@/hooks/useIsMobile";
 import { Rating } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
@@ -36,14 +38,16 @@ const ProductCard = ({
   };
   return (
     <div className="group relative p-2.5 rounded border">
-      <Image
-        className="rounded"
-        src={product.image}
-        alt="Product Image"
-        width={300}
-        height={320}
-      />
-      <div className="px-3 mt-7 flex flex-col gap-2">
+      <div className="image-container w-[196px] sm:w-[300px] h-[196px] sm:h-[332px] relative">
+        <Image
+          className="rounded object-cover"
+          src={product.image}
+          alt="Product Image"
+          layout="fill"
+        />
+      </div>
+
+      <div className="px-3 mt-4 sm:mt-7 flex flex-col ">
         <h3 className="font-bold ">{product.name}</h3>
         <p className="text-sm font-medium text-gray">
           Small appliances, kitchen
