@@ -1,7 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import Search from "../common/Search";
-import { FaHeart, FaShoppingCart, FaUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   return (

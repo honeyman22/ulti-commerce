@@ -1,5 +1,3 @@
-"use client";
-import useIsMobile from "@/hooks/useIsMobile";
 import { Rating } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
