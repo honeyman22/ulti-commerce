@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import MobileHeader from "@/components/layout/MobileHeader";
+import NavBar from "@/components/layout/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Ulti-Commerce",
@@ -21,7 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <MantineProvider>
-          <MobileHeader /> {children}
+          <MobileHeader />
+          <NavBar /> {children}
         </MantineProvider>
       </body>
     </html>

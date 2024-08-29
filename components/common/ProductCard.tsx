@@ -36,7 +36,7 @@ const ProductCard = ({
 
   return (
     <div className="group relative min-w-[240px] p-2.5 rounded border">
-      <div className="image-container ">
+      <div className="image-container max-w-[296px] ">
         <Image alt={product.name} src={MyImage} />
       </div>
 

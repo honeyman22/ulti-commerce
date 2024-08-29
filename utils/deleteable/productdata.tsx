@@ -45,16 +45,4 @@ export const productData = [
     image: "/deleteable/shoes.png",
     new: true,
   },
-  {
-    quantity: 1,
-    price: 3000,
-    finalPrice: 3030,
-    discountPrice: 30,
-    createdAt: "2023-03-10T09:50:00.000Z",
-    name: "Product E",
-    shortDescription: "State-of-the-art product with cutting-edge technology.",
-    image:
-      "https://govisually.com/wp-content/uploads/2023/03/use-bokeh-for-product-photography.png",
-    new: false,
-  },
 ];

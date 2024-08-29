@@ -1,14 +1,15 @@
+version: "3.8"
+
 services:
   e-commerce:
     build:
-      dockerfile: Dockerfile
       context: .
-      # Only will build development stage from our dockerfile
-      target: development
+      dockerfile: Dockerfile
+      target: development # Ensure this matches the stage name in the Dockerfile
     env_file:
       - ./.env
     volumes:
       - .:/usr/src/app
     command: npm run dev
     ports:
-      - ${PORT}:${POR
+      - "3000:3000"
