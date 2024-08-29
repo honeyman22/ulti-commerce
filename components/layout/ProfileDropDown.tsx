@@ -6,7 +6,7 @@ const ProfileDropDown = () => {
   return (
     <Menu shadow="md" width={200}>
       <Menu.Target>
-        <button className="notification-button">
+        <button aria-label="Profile" className="notification-button">
           <FaUserCircle size={28} fill="#969696" />
         </button>
       </Menu.Target>

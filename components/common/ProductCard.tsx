@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { IoHeart } from "react-icons/io5";
 import { MdShoppingCart } from "react-icons/md";
+import MyImage from "../../public/deleteable/jackets.png";
 
 const ProductCard = ({
   data,
@@ -30,22 +31,16 @@ const ProductCard = ({
     name: "Product Name",
     shortDescription:
       "edewd yfewu fyuewg fjhdjhfg ay fhgreuy fiiuhfgasdjhgfhs u",
-    image:
-      "https://govisually.com/wp-content/uploads/2023/03/use-bokeh-for-product-photography.png",
     new: true,
   };
+
   return (
-    <div className="group relative p-2.5 rounded border">
-      <div className="image-container w-[196px] sm:w-[300px] h-[196px] sm:h-[332px] relative">
-        <Image
-          className="rounded object-cover"
-          src={product.image}
-          alt="Product Image"
-          layout="fill"
-        />
+    <div className="group relative min-w-[240px] p-2.5 rounded border">
+      <div className="image-container ">
+        <Image alt={product.name} src={MyImage} />
       </div>
 
-      <div className="px-3 mt-4 sm:mt-7 flex flex-col ">
+      <div className="sm:px-3 mt-4 sm:mt-7 flex flex-col ">
         <h3 className="font-bold ">{product.name}</h3>
         <p className="text-sm font-medium text-gray">
           Small appliances, kitchen

@@ -6,13 +6,11 @@ const WishlistDropDown = () => {
   return (
     <Menu shadow="md" width={`80%`}>
       <Menu.Target>
-        <button className="notification-button">
+        <button aria-label="Wishlist" className="notification-button">
           <FaHeart size={28} fill="#969696" />
         </button>
       </Menu.Target>
-          <Menu.Dropdown>
-              
-      </Menu.Dropdown>
+      <Menu.Dropdown></Menu.Dropdown>
     </Menu>
   );
 };

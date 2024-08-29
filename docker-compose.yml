@@ -1,0 +1,14 @@
+services:
+  e-commerce:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      # Only will build development stage from our dockerfile
+      target: development
+    env_file:
+      - ./.env
+    volumes:
+      - .:/usr/src/app
+    command: npm run dev
+    ports:
+      - ${PORT}:${POR
