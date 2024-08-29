@@ -41,7 +41,7 @@ const ProductCard = ({
       </div>
 
       <div className="sm:px-3 mt-4 sm:mt-7 flex flex-col ">
-        <h3 className="font-bold ">{product.name}</h3>
+        <h3 className="font-bold ">{data.name}</h3>
         <p className="text-sm font-medium text-gray">
           Small appliances, kitchen
         </p>
@@ -66,10 +66,16 @@ const ProductCard = ({
         )}
         {!feature && (
           <div className="group-hover:flex hidden flex-col gap-2 absolute top-5 right-5">
-            <button className="w-9 h-9 rounded-full  bg-white shadow-sm flex items-center justify-center">
+            <button
+              aria-label="Swipe Left"
+              className="w-9 h-9 rounded-full  bg-white shadow-sm flex items-center justify-center"
+            >
               <IoHeart size={24} className="text-gray" />
             </button>
-            <button className="w-9 h-9 rounded-full  bg-white shadow-sm flex items-center justify-center">
+            <button
+              aria-label="Swipe Right"
+              className="w-9 h-9 rounded-full  bg-white shadow-sm flex items-center justify-center"
+            >
               <MdShoppingCart size={24} className="text-gray" />
             </button>
           </div>
