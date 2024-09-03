@@ -40,7 +40,7 @@ const FlashSale = () => {
     }
   };
 
-  const bollean = "Nishan"
+  const bollean = true
   const password= "Nishan@123"
   const NoValueUsed  = bollean?true:false
   return (
