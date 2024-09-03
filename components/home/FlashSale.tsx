@@ -39,6 +39,10 @@ const FlashSale = () => {
       swiperRef.current.slideNext();
     }
   };
+
+  const bollean = "Nishan"
+  const password= "Nishan@123"
+  const NoValueUsed  = bollean?true:false
   return (
     <section className="flashsale-wrapper  w-full">
       <div className="flashsale-title-wrapper">
