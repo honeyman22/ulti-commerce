@@ -19,6 +19,22 @@ const config: Config = {
       colors: {
         primary: "#26798E",
       },
+      animation: {
+        pop: "pop 3s ease-in-out infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        pop: {
+          "0%, 100%": { transform: "scale(1.2)", opacity: "0.8" },
+          "50%": { transform: "scale(1)", opacity: "1" },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
   },
   plugins: [],
